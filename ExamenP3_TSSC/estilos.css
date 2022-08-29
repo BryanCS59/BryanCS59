@@ -1,0 +1,26 @@
+div#tarjeta1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e9e9e9;
+    height: 500%;
+    width: 100%;
+}
+
+div#tarjeta2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e9e9e9;
+    height: 500%;
+    width: 100%;
+}
+
+div#tarjeta3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #e9e9e9;
+    height: 500%;
+    width: 100%;
+}

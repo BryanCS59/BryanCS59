@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <!--Comienza barra de navegación-->
+    <nav>
+        <!-- navbar content here  -->
+    </nav>
+
+    <ul id="slide-out" class="sidenav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="img/logo.jpg">
+                </div>
+                <a href="index.html"><img class="circle" src="img/logo.jpg"></a>
+                <a href="#user"><span class="white-text name">Bryan Castillo Segundo</span></a>
+                <a href="#email"><span class="white-text email">bcs101601@gmail.com</span></a>
+            </div>
+        </li>
+        <li><a href="index.html"><i class="material-icons">cloud</i>Inicio</a></li>
+        <li><a href="repertorio.html">Repertorio</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <!--Finaliza barra de navegación-->
+
+    <h1 class="center">Enjambre Records</h1>
+    <h5 class="center">En mi mundo hecho trizas, vienes a provocar sonrisas.</h5>
+
+    <!--Carrusel de imagenes-->
+
+    <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="img/daltonico.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="img/felino.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="img/huespedesorbe.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="img/ImperfectoExtrano.jpg"></a>
+        <a class="carousel-item" href="#five!"><img src="img/proano.jpg"></a>
+    </div>
+
+
+    <footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Topicos Selectos de Sistemas Computacionales</h5>
+              <p class="grey-text text-lighten-4">Alumno: Castillo Segundo Bryan.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">#</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">#</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">#</a>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Script Carrusel-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems, options);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+    <!--Script del sidenav-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        // Initialize collapsible (uncomment the lines below if you use the dropdown variation)
+        // var collapsibleElem = document.querySelector('.collapsible');
+        // var collapsibleInstance = M.Collapsible.init(collapsibleElem, options);
+
+        // Or with jQuery
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+    </script>
+
+</body>
+
+</html>
